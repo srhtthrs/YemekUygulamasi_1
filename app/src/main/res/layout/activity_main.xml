@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/food1">
+
+    <Spinner
+        android:id="@+id/spinnerSicil"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/border_12"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMudurluk"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerMudurluk"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border_12"/>
+
+    <Button
+        android:id="@+id/buttonDevam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="nextClick"
+        android:text="ILERI"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerSicil"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSicil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
